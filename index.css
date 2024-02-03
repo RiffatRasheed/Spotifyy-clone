@@ -1,0 +1,106 @@
+body{
+    background-color: burlywood;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+}
+nav{
+    background-color:skyblue;
+    color: white;
+    position:sticky;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+nav ul li{
+    padding: 5px;
+    
+}
+.logo{
+    display: flex;
+align-items: center;
+font-weight: bolder;
+
+}
+.logo img{
+    width:65px;
+}
+.container{
+    min-height:65vh; /* minimum height specified element will not be smaller than the specified minimum height, even if its content is not enough to fill that space. */
+    background-color: black;
+    color: white;
+    margin-top: 23px;
+    margin-bottom: 40px;
+    margin-left: 50vh;
+    margin-right: 20px;
+    width: 100vh;
+    display: flex;
+    padding: 20px;
+    background-image: url(./itemscover.jpg) ;
+    background-size: cover;
+    background-repeat: none;
+   
+}
+.bottom {
+    position: fixed;
+    bottom: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    background-color: skyblue;
+    color: white;
+    height: 80px;
+    margin-bottom: 10px;
+    width:1020px;
+}
+
+
+
+        
+
+#progressbar{
+    width: 150vh;
+    text-align: center;
+    margin-left: 10vh;
+    padding-top: 5vh;
+}
+.songItem img{
+    width: 20px;
+    border-radius: 34px;
+    padding: 10px;
+
+}
+.songItem{
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 30px;
+    background-color: white;
+    color:brown;
+    border-radius:100px;
+}
+.time i{
+    cursor: pointer;
+}
+.time {
+padding: 10px;
+}
+.playingsong {
+    position: absolute;
+    left:35vh;
+    top: 40px;
+}
+.playingsong img {
+    
+    opacity: 0;  /* making it fully transparent and invisible. */
+    transition: opacity 1s ease-in;  /* changes to the opacity property will be animated over a duration of 1 second */
+     ;
+}
